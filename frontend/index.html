@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HireMeAI | Ishant's AI Assistant</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar">
+
+        <div class="brand">
+
+            <div class="brand-icon">
+                ✦
+            </div>
+
+            <div>
+                <h1>HireMeAI</h1>
+                <p>AI Candidate Assistant</p>
+            </div>
+
+        </div>
+
+
+        <div class="profile">
+
+            <div class="avatar">
+                IK
+            </div>
+
+            <h2>Ishant Kanate</h2>
+
+            <p>
+                Java Full Stack Developer
+            </p>
+
+            <div class="status">
+
+                <span></span>
+
+                Available for opportunities
+
+            </div>
+
+        </div>
+
+
+        <div class="quick-section">
+
+            <p class="section-title">
+                EXPLORE
+            </p>
+
+
+            <button
+                class="quick-btn"
+                onclick="askQuestion('Tell me about yourself')">
+
+                <span>👤</span>
+
+                About Me
+
+            </button>
+
+
+            <button
+                class="quick-btn"
+                onclick="askQuestion('What are your technical skills?')">
+
+                <span>⚡</span>
+
+                Skills
+
+            </button>
+
+
+            <button
+                class="quick-btn"
+                onclick="askQuestion('Tell me about your projects')">
+
+                <span>🚀</span>
+
+                Projects
+
+            </button>
+
+
+            <button
+                class="quick-btn"
+                onclick="askQuestion('Tell me about your education')">
+
+                <span>🎓</span>
+
+                Education
+
+            </button>
+
+        </div>
+
+
+        <div class="sidebar-footer">
+
+            <div class="ai-badge">
+
+                <span>✦</span>
+
+                Powered by AI
+
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <!-- ================= MAIN CHAT ================= -->
+
+    <main class="chat-area">
+
+
+        <!-- HEADER -->
+
+        <header class="chat-header">
+
+            <div>
+
+                <h2>
+                    Chat with HireMeAI
+                </h2>
+
+                <p>
+                    Ask anything about Ishant's background,
+                    skills and projects.
+                </p>
+
+            </div>
+
+
+            <div class="online">
+
+                <span></span>
+
+                AI Online
+
+            </div>
+
+        </header>
+
+
+        <!-- ================= MESSAGES ================= -->
+
+        <section
+            class="messages"
+            id="messages">
+
+
+            <!-- AI WELCOME MESSAGE -->
+
+            <div class="message ai-message">
+
+                <div class="message-avatar">
+                    ✦
+                </div>
+
+
+                <div class="message-content">
+
+                    <div class="message-name">
+                        HireMeAI
+                    </div>
+
+
+                    <div class="bubble">
+
+                        Hi! 👋 I'm HireMeAI,
+                        Ishant's AI assistant.
+
+                        <br><br>
+
+                        I'm here to answer questions
+                        about his skills, projects,
+                        education and experience.
+
+                        <br><br>
+
+                        <strong>
+                            How can I help you today?
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- QUICK QUESTIONS -->
+
+            <div class="suggestions">
+
+
+                <button
+                    onclick="askQuestion('Tell me about yourself')">
+
+                    Tell me about yourself
+
+                </button>
+
+
+                <button
+                    onclick="askQuestion('What are your strongest technical skills?')">
+
+                    What are your strongest skills?
+
+                </button>
+
+
+                <button
+                    onclick="askQuestion('Tell me about your projects')">
+
+                    Tell me about your projects
+
+                </button>
+
+
+                <button
+                    onclick="askQuestion('Why should we consider Ishant for this role?')">
+
+                    Why should we consider you?
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= INPUT ================= -->
+
+        <div class="input-area">
+
+            <div class="input-box">
+
+
+                <textarea
+                    id="question"
+                    placeholder="Ask something about Ishant..."
+                    rows="1"></textarea>
+
+
+                <button
+                    class="send-btn"
+                    onclick="sendMessage()"
+                    id="sendButton">
+
+                    ➤
+
+                </button>
+
+            </div>
+
+
+            <p class="input-note">
+
+                HireMeAI answers based on Ishant's resume.
+
+            </p>
+
+        </div>
+
+    </main>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

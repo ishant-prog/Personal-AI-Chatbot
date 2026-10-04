@@ -1,0 +1,4 @@
+fastapi
+groq
+pypdf
+python-dotenv
