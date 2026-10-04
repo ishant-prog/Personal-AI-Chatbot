@@ -2,7 +2,7 @@
    BACKEND URL
 ============================== */
 
-const API_URL = "http://127.0.0.1:8000/chat";
+const API_URL = "https://personal-ai-chatbot-bay.vercel.app/chat";
 
 
 /* ==============================
